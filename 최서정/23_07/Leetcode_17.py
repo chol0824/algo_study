@@ -6,7 +6,7 @@ class Solution:
                 return
             for i in range(index, len(digits)):
                 for j in dic[digits[i]]:
-                    dfs(i+1, path+j) # path+j는 문자열 join이다!
+                    dfs(i+1, path+j)
             
         if not digits:
             return []
